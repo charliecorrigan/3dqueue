@@ -1,8 +1,10 @@
-# Quantified Self Webpack
+# 3DQueue
 
-To get you started building your Quantified Self app.
+INSERT DESCRIPTION
 
 ## Initial Setup
+
+UPDATE INSTRUCTIONS BELOW FOR NEW PROJECT
 
 One person from your project will set up the repository. That one person should follow these steps:
 
