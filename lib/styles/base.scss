@@ -1,0 +1,23 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:bold+Lobster);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  background-image: url("../images/splatter.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.content-container {
+  width: 60%;
+  margin: auto;
+  margin-top: 2%;
+  background-color: white;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  opacity: .94;
+}
