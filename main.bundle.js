@@ -418,15 +418,15 @@
 	    var email = $('input[name="email"]').val();
 	    var username = $('input[name="username"]').val();
 	    var password = $('input[name="password"]').val();
-	    this.postNewAdmin({ username: username, password: password });
-	  }.bind(this));
+	    postNewAdmin({ username: username, password: password });
+	  });
 	};
 
 	const postNewAdmin = function (adminParams) {
 	  console.log("Made it to the post new admin function at least");
 	  $.post('http://localhost:3000/api/v1/admins', adminParams).then(function (result) {
 	    console.log("Admin created, Huzzah!");
-	  }.bind(this)).catch(this.handleError);
+	  }).catch(handleError);
 	};
 
 	const handleError = function (error) {
