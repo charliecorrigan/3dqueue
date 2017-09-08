@@ -412,7 +412,7 @@
 	});
 
 	const listenForSubmit = function () {
-	  $('form .signup').on('submit', function () {
+	  $('form.signup').on('submit', function () {
 	    event.preventDefault();
 	    var organization = $('input[name="organization"]').val();
 	    var email = $('input[name="email"]').val();
