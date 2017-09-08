@@ -424,8 +424,9 @@
 	};
 
 	const postNewAdmin = function (adminParams) {
-	  $.post('localhost:3000/api/v1/admins', adminParams).then(function (result) {
-	    console.log("Admin created");
+	  console.log("Made it to the post new admin function at least");
+	  $.post('http://localhost:3000/api/v1/admins', adminParams).then(function (result) {
+	    console.log("Admin created, Huzzah!");
 	  }.bind(this)).catch(this.handleError);
 	};
 
