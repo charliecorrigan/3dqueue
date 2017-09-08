@@ -11,25 +11,24 @@
   <div class ="content-container">
     <h1>Create a New Account</h1>
     <div class="container">
-        <form>
+        <form class="signup">
           <ul class="flex-outer">
             <li>
               <label for="organization">Organization Name</label>
-              <input type="org" id="org" placeholder="Enter your organization name here">
-            </li>
-            <li>
-              <label for="last-name">Last Name</label>
-              <input type="text" id="last-name" placeholder="Enter your last name here">
+              <input type="organization" name="organization" id="organization" placeholder="Enter your organization name here">
             </li>
             <li>
               <label for="email">Email</label>
-              <input type="email" id="email" placeholder="Enter your email here">
+              <input type="email" name="email" id="email" placeholder="Enter your email here">
             </li>
             <li>
-              <label for="override-email">Email</label>
-              <input type="override-email" id="override-email" placeholder="Enter your user override email here">
-            </li>
-
+                <label for="username">Username</label>
+                <input type="username" name="username" id="username" placeholder="Enter your username here">
+              </li> 
+            <li>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter your password here">
+              </li>
             <li>
               <button type="submit">Submit</button>
             </li>
@@ -37,7 +36,7 @@
         </form>
       </div>
     </div>
-  <script src="../main.bundle.js"></script>
+  <script src="main.bundle.js"></script>
 </body>
 </html>
 
