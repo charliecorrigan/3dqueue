@@ -430,7 +430,9 @@
 
 	const postNewAdmin = function (adminParams) {
 	  console.log("Made it to the post new admin function");
-	  $.post('http://localhost:3000/api/v1/admins', adminParams).then(function (result) {
+	  console.log("Here are the adminParams: ");
+	  console.log(adminParams);
+	  $.post('https://threedqueue-backend.herokuapp.com/api/v1/admins', adminParams).then(function (result) {
 	    console.log("Admin created, Huzzah!");
 	  }).catch(handleError);
 	};
