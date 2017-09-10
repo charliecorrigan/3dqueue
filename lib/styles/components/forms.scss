@@ -1,13 +1,6 @@
-// body {
-//   font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
-//   background: #3AAFAB;
-//   color: #fff;
-//   padding: 50px 0;
-// }
 
 .container {
   width: 80%;
-  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -35,7 +28,7 @@
 
 .flex-inner {
   padding: 0 8px;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 
 .flex-outer > li:not(:last-child) {
@@ -45,15 +38,15 @@
 .flex-outer li label,
 .flex-outer li p {
   padding: 8px;
-  font-weight: 300;
-  letter-spacing: .09em;
+  // font-weight: 300;
+  // letter-spacing: .09em;
   text-transform: uppercase;
 }
 
 .flex-outer > li > label,
 .flex-outer li p {
   flex: 1 0 120px;
-  max-width: 220px;
+  max-width: 400px;
 }
 
 .flex-outer > li > label + *,
@@ -75,13 +68,24 @@
   margin-left: auto;
   padding: 8px 16px;
   border: none;
-  background: #333;
+  background: #00B8EC;
+  font-size: 16px;
   color: #f2f2f2;
   text-transform: uppercase;
-  letter-spacing: .09em;
+  // letter-spacing: .09em;
   border-radius: 2px;
+
 }
+    .signup button:hover {
+      color: #FFCB05;
+      cursor: pointer;
+    }
 
 .flex-inner li {
   width: 100px;
+}
+
+.signup input {
+  background-color: #FFCB05;
+  font-size: 14px;
 }
