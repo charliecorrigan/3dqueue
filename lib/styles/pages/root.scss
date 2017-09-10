@@ -1,51 +1,16 @@
 // **************************
-//         MAIN IMAGE
-// **************************
-
-#root-jumbo-img-container {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  float: left;
-}
-
-#root-jumbo-img {
-  width: 200px;
-}
-
-// **************************
-//         NAV BAR
-// **************************
-
-nav {
-  padding-top: 1%;
-  display: flex;
-  justify-content: flex-end;
-  height: 40px;
-  padding-right: 21%;
-  padding-bottom: 1%;
-  border-bottom-color: hsl(208, 100%, 83%);
-  border-bottom-style: solid;
-  border-bottom-width: 5px;
-  background-color: white;
-  opacity: .9;
-}
-
-// **************************
 //         CONTENT
 // **************************
 .app-description-container {
-  margin: auto;
   width: 94%;
   padding-top: 15px;
 }
 
 .app-description {
-  margin: auto;
   -webkit-column-count: 3; /* Chrome, Safari, Opera */
   -moz-column-count: 3; /* Firefox */
   column-count: 3;
-  -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
-  -moz-column-gap: 40px; /* Firefox */
-  column-gap: 40px;
+  -webkit-column-gap: 30px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 30px; /* Firefox */
+  column-gap: 30px;
 }
