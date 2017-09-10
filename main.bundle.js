@@ -434,7 +434,6 @@
 	    type: "POST",
 	    crossDomain: true,
 	    data: adminParams,
-	    dataType: "json",
 	    success: function (response) {
 	      console.log("Admin created, Huzzah!");
 	      var resp = JSON.parse(response);
