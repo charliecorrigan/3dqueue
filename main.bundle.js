@@ -429,10 +429,26 @@
 	};
 
 	const postNewAdmin = function (adminParams) {
-	  $.post('https://threedqueue-backend.herokuapp.com/api/v1/admins', adminParams).then(function (result) {
-	    console.log("Admin created, Huzzah!");
-	    // window.location.href = '/3dqueue/admin/dashboard.html';
-	  }).catch(handleError);
+	  $.ajax({
+	    url: "https://threedqueue-backend.herokuapp.com/api/v1/admins",
+	    type: "POST",
+	    crossDomain: true,
+	    data: JSON.stringify(adminParams),
+	    dataType: "json",
+	    success: function (response) {
+	      console.log("Admin created, Huzzah!");
+	      var resp = JSON.parse(response);
+	      alert(resp.status);
+	    },
+	    error: function (xhr, status) {
+	      alert("error");
+	    }
+	  });
+	  // $.post('https://threedqueue-backend.herokuapp.com/api/v1/admins', adminParams)
+	  // .then(function(result){
+	  //   // window.location.href = '/3dqueue/admin/dashboard.html';
+	  // })
+	  // .catch(handleError);
 	};
 
 	const handleError = function (error) {
