@@ -436,6 +436,7 @@
 	    data: adminParams,
 	    success: function (response) {
 	      console.log("Admin created, Huzzah!");
+	      console.log(response);
 	      var resp = JSON.parse(response);
 	      alert(resp.status);
 	    },
