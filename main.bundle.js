@@ -433,7 +433,7 @@
 	    url: "https://threedqueue-backend.herokuapp.com/api/v1/admins",
 	    type: "POST",
 	    crossDomain: true,
-	    data: JSON.stringify(adminParams),
+	    data: adminParams,
 	    dataType: "json",
 	    success: function (response) {
 	      console.log("Admin created, Huzzah!");
@@ -441,6 +441,7 @@
 	      alert(resp.status);
 	    },
 	    error: function (xhr, status) {
+	      console.log("Here at signup.js on the front end app, line 38");
 	      alert("error");
 	    }
 	  });
