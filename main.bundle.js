@@ -442,6 +442,10 @@
 	    },
 	    error: function (xhr, status) {
 	      console.log("Here at signup.js on the front end app, line 38");
+	      console.log("xhr is: ");
+	      console.log(xhr);
+	      console.log("Status is: ");
+	      console.log(status);
 	      alert("error");
 	    }
 	  });
